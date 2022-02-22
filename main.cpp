@@ -71,11 +71,11 @@ int main()
             fwrite(buf, 1, readn, stdout);
     
     }
-
+    pclose(handle);
 
     send(new_socket , buf , strlen(buf) , 0 );
                
 
-    pclose(handle);
+    
 	return 0;
 }
